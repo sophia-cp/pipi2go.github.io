@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Found My Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+
+  <main class="login-container">
+    <div class="glass-card">
+      <p class="tiny-text">⋆｡°✩</p>
+      <h1 class="main-title">you found my website</h1>
+      <p class="subtitle">enter the password to continue</p>
+
+      <div class="password-box">
+        <input 
+          type="password" 
+          id="passwordInput" 
+          placeholder="enter password"
+        />
+        <button onclick="checkPassword()">enter</button>
+      </div>
+
+      <p id="errorMessage" class="error-message"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
