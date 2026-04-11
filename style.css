@@ -8,10 +8,29 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #fdf6f9, #f7f3ff, #eef7ff);
-  color: #4a4458;
+  background: #bcf7ff;
+  color: #000000;
+  font-weight: bold;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+/*index page by me*/
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  width: 300px;
+  display: block;
+}
+
+.password-box {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* LOGIN PAGE */
@@ -23,20 +42,11 @@ body {
   padding: 20px;
 }
 
-.login-container {
+/* .login-container {
   width: 100%;
   max-width: 500px;
-}
+} */
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  border-radius: 30px;
-  padding: 50px 30px;
-  text-align: center;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-}
 
 .tiny-text {
   font-size: 20px;
@@ -91,10 +101,21 @@ body {
   opacity: 0.9;
 }
 
+.password-box button {
+  color: white;
+  background: pink;
+}
+
+#passwordInput::placeholder {
+  color: rgb(247, 143, 160);
+}
+
 .error-message {
   margin-top: 15px;
-  color: #b35b7a;
-  font-size: 0.95rem;
+  text-align: center;
+  color: #ff0000;
+  font-size: 1rem;
+  font-weight:bold;
 }
 
 /* NAVBAR */
