@@ -8,24 +8,26 @@
 </head>
 <body class="login-page">
 
-  <main class="login-container">
-    <div class="glass-card">
-      <p class="tiny-text">⋆｡°✩</p>
-      <h1 class="main-title">you found my website</h1>
-      <p class="subtitle">enter the password to continue</p>
+ <main class="login-container">
 
-      <div class="password-box">
-        <input 
-          type="password" 
-          id="passwordInput" 
-          placeholder="enter password"
-        />
-        <button onclick="checkPassword()">enter</button>
-      </div>
+  <div class="image-wrapper">
+    <img src="assets/welcome.PNG" alt="welcome to my website">
 
-      <p id="errorMessage" class="error-message"></p>
+    <div class="password-box">
+      <input style="color:pink"
+        type="password" 
+        id="passwordInput" 
+        placeholder="enter password"
+      />
+      <button onclick="checkPassword()" style="font-weight:bold;">enter</button>
+        <p id="errorMessage" class="error-message"></p>
+
     </div>
-  </main>
+  </div>
+
+  
+
+</main>
 
   <script src="script.js"></script>
 </body>
